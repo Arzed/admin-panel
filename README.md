@@ -2,7 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, create .env file and input =
+  MONGODB_URI
+  GOOGLE_ID
+  GOOGLE_SECRET
+  AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY
+  AWS_BUCKET
+  AWS_DEFAULT_REGION
+  AWS_ENDPOINT // if u use other services
+
+Second, run the development server:
 
 ```bash
 npm run dev
