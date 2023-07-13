@@ -12,7 +12,7 @@ MONGODB_URI
   AWS_SECRET_ACCESS_KEY
   AWS_BUCKET
   AWS_DEFAULT_REGION
-  AWS_ENDPOINT
+  AWS_ENDPOINT // if u use other service
 ```
 
 Second, run the development server:
