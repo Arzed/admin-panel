@@ -6,7 +6,7 @@ const fetcher = (url: string) => axios.get(url).then(res => res.data)
 
 export const useProducts = (url: string, config: SWRConfiguration = {}) => {
   // const { data, error } = useSWR<IProduct[]>(`/api${url}`, fetcher, config);
-  const { data, error } = useSWR<IProduct[]>(`/api/${url}`, fetcher);
+  const { data, error } = useSWR<IProduct[] | any>(`/api/${url}`, fetcher);
 
   return {
     products: data || [],
