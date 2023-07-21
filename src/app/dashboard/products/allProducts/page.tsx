@@ -23,7 +23,7 @@ export default function AllProducts() {
     if (searchQuery === '') {
       setFilteredProducts(products)
     } else {
-      const filtered = products.filter((product) => product.title.toLowerCase().includes(searchQuery.toLowerCase()))
+      const filtered = products.filter((product: { title: string; }) => product.title.toLowerCase().includes(searchQuery.toLowerCase()))
       setFilteredProducts(filtered)
     }
   }, [searchQuery, products]) 
